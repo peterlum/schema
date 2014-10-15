@@ -1,0 +1,242 @@
+Schema for Amazon
+====================
+
+Amazon
+-----------
+Location/Region
+Departments
+Department ID
+Users
+User ID
+Vendors
+Vendor ID
+Shipping Methods
+Payment Methods
+Products
+Service Description
+
+
+Users
+-----------
+User Id
+First Name
+Last Name
+User Name
+Password
+E-mail Address
+User Phone Number
+Address
+Payment Method
+Shopping Cart 
+Wish Lists
+Reviews
+Purchase History
+Status (Prime Membership or not) boolean
+
+
+Vendors
+-----------
+Vendor Id
+Vendor Name
+Vendor Administrators
+Vendor Users
+Vendor Password
+Vendor Location
+Vendor Description
+Date Added
+Reviews
+Inventory
+Shipping Options
+Prime Vendor (Y/N?)
+
+
+Join Table-Product Vendors
+--------------------------
+Products Ids
+Product Names
+Prices
+Vendor Ids
+Vendor Names
+Ratings
+Date Added
+Location
+Shipping Method
+
+
+
+Inventory
+-----------
+Products
+Product Category
+Product Prices
+Quantity Available
+Quantity Sold
+Product Description
+Reviews
+Ratings
+
+
+Products
+-----------
+Product Id
+Product Name
+Product Location
+Date Added
+Availability
+Cost
+Discounted Cost
+Quantity
+Category/Department
+Reviews
+Purchasers
+Vendors
+
+
+
+Join Table Cost Product
+-----------
+Product Id
+Product Name
+Product Vendor
+Product Vendor Id
+Reviews
+Ratings
+Reviewer
+Reviewee
+Cost
+Quantity
+
+
+
+Join Table Product and Purchaser?
+------------------------
+Purchaser Id
+Purchaser Name
+Product Id
+Product Name
+Price
+
+
+
+Product Request
+-----------
+Product Name
+Product Price
+Vendor Id
+Vendor Name
+Availability Boolean Y/N
+Date Available DateTime
+
+
+
+Categories/Departments
+------------
+Category Name
+Category Id
+Product Name
+Product Type
+Reviews
+Ratings
+Date Added
+Popular
+Recently Added
+
+
+Recommended
+------------
+Product Name
+Product Id
+Prices
+Ratings
+Reviews
+Reviewer
+Vendor
+Vendor Name
+Vendor Id
+
+
+
+Gift Cards
+------------
+Vendor
+Vendor Id
+Value
+Gift Card Id
+User
+User Id
+Date Added
+Date Used
+Date Expires
+
+
+
+Shopping Cart
+-----------
+Purchaser Name
+Purchaser Id
+Purchaser Payment Method
+Payment Method Digits (Digits on the Card)
+Purchaser Location
+Shipping Method
+Cost
+
+
+
+Join Table Shipping Locations Orders
+-----------
+Location
+Location ID
+Shipment Method
+Shipment Status
+Date Shipped
+Date Order Placed
+Purchaser
+Purchaser ID
+Vendor
+Vendor ID
+Order ID
+
+
+
+
+
+Orders
+-----------
+Order Name
+Order Id
+Products
+Product Quantity
+Costs
+Purchaser
+Purchaser Email
+Vendors
+Vendor Contact
+Date Added
+Shipping Method
+Payment Status
+Payment Confirmation
+Date Shipped
+
+
+
+Shipping Status
+------------
+
+Shipping Method
+Order Id
+Order Name
+Purchaser
+Purchaser Id
+Vendor
+Vendor ID
+Description
+Transit Status
+Date Shipped
+Date Arrived
+
+
+
+
+
+
+
